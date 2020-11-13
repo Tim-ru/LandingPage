@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <div class="container">
+            <header class="header">
+                <div class="links">
+                    <span>Links</span>
+                    <span class="material-icons">search</span>
+                </div>
+                <div class="weather">
+                    <span>Погода</span>
+                </div>
+            </header>
+        </div>
+
+        <div class="container">
+            <div class="content">
+                <div class="time">
+                    <span id="hour">04</span>:<span id="minute">20</span>:<span id="second">20</span>
+                </div>
+                <div class="greeting">
+                    Good afternoon, <span id="name" contenteditable="true">Tim</span>.
+                </div>
+                <div class="focus">
+                    What is your main focus for today?
+                </div>
+                <h2 id="focus" contenteditable="true"></h2>
+            </div>
+
+            <div class="widget">
+                <div class="todoList">
+                    <div class="todoHeader">
+                        <div class="todoToday">
+                            Today
+                            <span id="arrow" class="material-icons">
+                                expand_more
+                            </span>
+                        </div>
+                        <div class="todoMore">
+                            <span class="material-icons">
+                                more_horiz
+                            </span>
+                        </div>
+                    </div>
+                    <div class="todoTask">
+                        <input type="text" class="todoInput">
+                        <button class="todoButton" type="submit">
+                            <span class="material-icons">
+                                add
+                            </span>
+                        </button>
+                    </div>
+                    <div class="todoitems">
+                        <div class="todoContainer">
+                            <ul class="todo-list"></ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <footer class="footer">
+                <div class="place">Izhevsk</div>
+                <div class="quote">"A friend is someone who knows all about you and still loves you.
+                    ― Elbert Hubbard"</div>
+                <div class="day">Today is
+                    <span id="day">13</span>.<span id="month">04</span>.<span id="year">20</span>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
