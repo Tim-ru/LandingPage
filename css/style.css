@@ -101,8 +101,8 @@ body {
 
 .todoList {
     padding: 10px;
-    height: 200px;
-    width: 280px;
+    max-height: 300px;
+    width: 360px;
     background-color: rgba(30, 28, 31, 0.918);
     color: #8A2922;
     font-weight: 700;
@@ -132,6 +132,7 @@ body {
 .todoTask {
     display: flex;
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .todoItems {
@@ -164,6 +165,31 @@ body {
 
 .todoContainer ul {
     list-style: none;
+}
+
+.todo {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.todoItem {
+    background: none;
+    border: 2px solid #8A2922;
+    border-radius: 5px;
+    color: #0595b9;
+    padding: 0px 10px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    font-size: 14px;
+    width: 100px;
+}
+
+.complete-btn, .trash-btn {
+    color: #8A2922;
+    background: none;
+    outline: none;
+    border: 2px solid #8A2922;
+    margin-left: 10px;
 }
 
 /* footer */

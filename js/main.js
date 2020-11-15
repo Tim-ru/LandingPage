@@ -87,12 +87,12 @@ function addTodo() {
     saveLocalTodos(todoInput.value);
     // Check mark button
     const completeButton = document.createElement('button');
-    completeButton.innerHTML = '<i class = "fas fa-check"></i>';
+    completeButton.innerHTML = '<span class="material-icons">done</span>';
     completeButton.classList.add("complete-btn");
     todoDiv.appendChild(completeButton);
     // Check trash button
     const trashButton = document.createElement('button');
-    trashButton.innerHTML = '<i class = "fas fa-trash"></i>';
+    trashButton.innerHTML = '<span class="material-icons">delete</span>';
     trashButton.classList.add("trash-btn");
     todoDiv.appendChild(trashButton);
     //append to list
